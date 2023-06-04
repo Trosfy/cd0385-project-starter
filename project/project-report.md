@@ -27,7 +27,7 @@ I would try out new features in EDA. For example, in the dataset, weather is sti
 |--|--|--|--|--|
 |initial|root_mean_squared_error|600|best_quality|-|1.79807|
 |add_features|root_mean_squared_error|600|best_quality|-|0.72646|
-|hpo|root_mean_squared_error|600|best_quality|{'num_trials': 5,'scheduler':'local','searcher': 'auto'}|0.72574|
+|hpo|root_mean_squared_error|600|best_quality|{'num_trials': 5,'scheduler':'local','searcher': 'auto'}|0.66526|
 
 ### Create a line plot showing the top model score for the three (or more) training runs during the project.
 
@@ -38,4 +38,4 @@ I would try out new features in EDA. For example, in the dataset, weather is sti
 ![model_test_score.png](img/model_test_score.png)
 
 ## Summary
-Predicting bike sharing demand using hyperparameters of root_mean_squared_error evaluation metric, 600 seconds time limit, and using best_quality presets resulted in 1.79807 kaggle score which was used as the baseline in this project. In exploratory data analysis, the datetime feature is extracted to year, month, day, and hours to help the model better associate with other categorical/non-categorical features; weather, season, temperature, working day, humidity, and wind speed. With the new extracted features, the new model received a kaggle score of 0.72646, a significant increase from the baseline model. Hyperparameter tuning was also done to set the number of trials to 5. This changes how the model tunes each of the algorithms given a set limit of 5 and hyperparameter tuned model received a kaggle score of 0.67215, better than the new features model. From this, it can be concluded that there are a lots of combinations to try out, while a big increase in model score resulted from EDA by having better data/feature engineered for the model to train with. 
+Predicting bike sharing demand using hyperparameters of root_mean_squared_error evaluation metric, 600 seconds time limit, and using best_quality presets resulted in 1.79807 kaggle score which was used as the baseline in this project. In exploratory data analysis, the datetime feature is extracted to year, month, day, and hours to help the model better associate with other categorical/non-categorical features; weather, season, temperature, working day, humidity, and wind speed. With the new extracted features, the new model received a kaggle score of 0.72646, a significant increase from the baseline model. Hyperparameter tuning was also done to set the number of trials to 5. This changes how the model tunes each of the algorithms given a set limit of 5 and hyperparameter tuned model received a kaggle score of 0.66526, better than the new features model. From this, it can be concluded that there are a lots of combinations to try out, while a big increase in model score resulted from EDA by having better data/feature engineered for the model to train with. 
